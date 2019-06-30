@@ -1,0 +1,165 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  display: grid;
+  grid-template-columns: 350px 1fr;
+  grid-column-gap: 20px;
+  font-family: Muli, serif;
+}
+
+#navbar {
+  background-color: #cccccc;
+  position: fixed;
+  top: 0;
+  left: 0;
+   z-index: 100000000000;/*used to remove the tests for freecodecamp and allow the nav-bar items to be clicked */
+  box-sizing: border-box;
+  width: 340px;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+border-right-color: black;
+  border-right-style: inset;
+  border-right-width: 1px;
+  grid-column: 1/2;
+  overflow-y: auto;
+}
+
+#menu-title {
+  padding-top: 10px;
+  font-size: 35px;
+  text-align: center;
+}
+
+#navbar hr{
+  margin-bottom: 0;
+}
+
+#nav-list {
+  margin: 0px;
+  padding: 0px;
+  list-style-type: none;
+  box-sizing: border-box;
+}
+
+.nav-list-item {
+  margin: 0px;
+  padding: 0px 0px;
+  font-size: 20px;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.nav-link {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0px;
+  padding: 10px 0px 10px 50px;
+  text-decoration: none;
+  color: black;
+}
+
+.nav-link:hover {
+  background-color: #808080;
+  color: white;
+}
+
+#main-doc {
+  padding: 15px 0px 0px 0px;
+  grid-column: 2/3;
+  box-sizing: border-box;
+}
+
+header {
+  font-size: 35px;
+}
+
+.main-section {
+  padding: 10px 0px;
+  box-sizing: border-box;
+  width: 95%;
+  text-align: justify;
+}
+
+section {
+  margin-bottom: -10px;
+}
+
+code {
+  padding: 10px 10px 10px 10px;
+  background-color: #f2f2f2;
+}
+pre{
+  display: block;
+  width: 100%;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Code which is seperate from paragraphs and that may span multiple lines*/
+.block-code {
+  display: block;
+   white-space: pre-wrap; 
+  word-wrap: break-word;
+  box-sizing: border-box;
+}
+
+/*
+Code that sits within paragraph text. Will only be one line*/
+.inline-code {
+  display: inline;
+  width: auto;
+  height: auto;
+  padding: 0;
+}
+
+ul{
+ padding-left: 0;
+  box-sizing: border-box;
+  list-style-position: inside;
+  width: 100%;
+}
+.main-list-item {
+  padding: 5px 0px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 850px) {
+  body {
+    display: block;
+  }
+
+  #navbar {
+    position: static;
+    display: block;
+    width: 100%;
+    height: 260px;
+    grid-column: auto;
+  }
+
+  #nav-list {
+    display: block;
+    height: 175px;
+    overflow: auto;
+  }
+
+  .nav-list-item {
+    text-align: center;
+  }
+  .nav-link {
+    padding: 10px 0px 10px 0px;
+  }
+  #main-doc {
+    display: inline-block;
+    width: 92%;
+    grid-column: auto;
+    margin-left: 4%;
+    margin-right: 4%;
+  }
+
+  .main-section {
+    width: 100%;
+  }
+}
