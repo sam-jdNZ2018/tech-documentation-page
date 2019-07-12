@@ -12,7 +12,7 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-   z-index: 100000000000;/*used to remove the tests for freecodecamp and allow the nav-bar items to be clicked */
+  z-index: 100000000000;/*used to remove the tests for freecodecamp and allow the nav-bar items to be clicked */
   box-sizing: border-box;
   width: 340px;
   height: 100%;

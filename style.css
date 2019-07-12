@@ -12,7 +12,6 @@ body {
   position: fixed;
   top: 0;
   left: 0;
-   z-index: 100000000000;/*used to remove the tests for freecodecamp and allow the nav-bar items to be clicked */
   box-sizing: border-box;
   width: 340px;
   height: 100%;
@@ -49,6 +48,8 @@ border-right-color: black;
   font-size: 20px;
   text-align: left;
   box-sizing: border-box;
+ 
+  
 }
 
 .nav-link {
